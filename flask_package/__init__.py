@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_bcrypt import Bcrypt
 from flask_login import LoginManager
 from flask_migrate import Migrate
-
+#nothing
 app = Flask(__name__)
 #app.secret_key = b'\_5#y2L"F4Q8z\n\xec]/'
 #app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///site.db"
