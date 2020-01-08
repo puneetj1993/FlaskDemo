@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}
+My Posts
+{% endblock %}
+
+{% block bodyContent %}
+	<section>
+      		<form method="POST" action="">
+			Write your Post here: <input  type="text" name="msg">
+	      		<button type="submit">Submit</button>
+		</form>
+	</section>
+		
+
+{% endblock %}
+
+{% block asideContent %}
+	<section>
+		<h3>My Posts</h3>
+		{% for i in mypst %}
+			<p><li>{{i.post}}</li></p>
+		{% endfor %}
+	</section>
+{% endblock %}
